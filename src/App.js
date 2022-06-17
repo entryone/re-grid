@@ -1,11 +1,12 @@
-import React from "react";
+import React, {useState, useRef, useMemo} from "react";
 import "./style.css";
+import { ReGrid } from './ReGrid'
+
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+    <div style={{width: '100%', height: 500, border: '1px solid #e2e3e3'}}>
+      <ReGrid />
     </div>
   );
 }
